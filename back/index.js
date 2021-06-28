@@ -2,9 +2,12 @@ const express = require('express');
 
 const app = express();
 
+const questionsRoutes = require('./routes/questions');
 const userRoutes = require('./routes/users');
 
+app.use('/questions', questionsRoutes);
 app.use('/users', userRoutes);
+
 const port = 9000;
 
 app.listen(port, () => {
