@@ -1,0 +1,9 @@
+GET http://localhost:9000/users
+
+###
+
+GET http://localhost:9000/questions
+
+###
+
+GET http://localhost:9000/questions/1/answers
