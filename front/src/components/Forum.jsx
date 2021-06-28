@@ -1,24 +1,22 @@
 import React, { useState } from 'react';
 import '../CSS/Forum.css';
+import Navbar from './Navbar';
 
 function Forum() {
   const [isBurgerOpened, setIsBurgerOpened] = useState(false);
+  const toggleBurgerOpened = () => setIsBurgerOpened((wasBurgerOpened) => !wasBurgerOpened);
+
+  const toggleButton = (classname, text) => <button type="button" className={classname} onClick={toggleBurgerOpened}>{text}</button>;
+
   return (
     <div>
-      {!isBurgerOpened && (
-        <button type="button" label="menu-burger" onClick={() => setIsBurgerOpened(!isBurgerOpened)}>Je suis un menu burger</button>
-      )}
-      {isBurgerOpened && (
-      <nav>
-        <ul>
-          <li>C&apos;est</li>
-          <li>la</li>
-          <li>navbar</li>
-        </ul>
-      </nav>
-      )}
-      {isBurgerOpened && (
-      <button type="button" label="button-inside-burger-menu" onClick={() => setIsBurgerOpened(!isBurgerOpened)}>Je suis le bouton dans le menu burger</button>
+      {isBurgerOpened ? (
+        <>
+          {toggleButton('burger-close', 'x')}
+          <Navbar />
+        </>
+      ) : (
+        toggleButton('burger-open', '≣')
       )}
       <h1>Questions and Answers</h1>
       <button type="submit">Create topic</button>
