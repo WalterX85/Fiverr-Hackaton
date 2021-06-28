@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/Header.scss';
+import '../CSS/Header.scss';
 import logoFiverr from '../Assets/logoFiverr.jpg';
 
 function Header() {
@@ -35,38 +35,7 @@ function Header() {
           <a href="test">Sign In</a>
         </div>
       </div>
-      <div className="container2">
-        <div className="graphics-design">
-          <a href="test">Graphics & Design</a>
-        </div>
-        <div className="digital-marketing">
-          <a href="test">Digital Marketing</a>
-        </div>
-        <div className="writing-translation">
-          <a href="test">Writing & Translation</a>
-        </div>
-        <div className="video-animation">
-          <a href="test">Video & Animation</a>
-        </div>
-        <div className="music-audio">
-          <a href="test">Music & Audio</a>
-        </div>
-        <div className="programming-tech">
-          <a href="test">Programming & Tech</a>
-        </div>
-        <div className="data">
-          <a href="test">Data</a>
-        </div>
-        <div className="business">
-          <a href="test">Business</a>
-        </div>
-        <div className="lifestyle">
-          <a href="test">Lifestyle</a>
-        </div>
-        <div className="question-answer">
-          <a href="question-answer">Questions & Answers</a>
-        </div>
-      </div>
+
     </>
   );
 }

@@ -12,10 +12,47 @@ body {
 
 h1 {
   text-align: center;
+  color: #254200;
 }
 
-.burger-open {
+.burger-open, .burger-close {
+  max-width: 20%;
+  height: 5vh;
   background-color: rgba(0, 0, 0, 0);
   border-style: none;
   font-size: 2em;
+  position: relative;
+}
+
+.burger-open:hover {
+  color: #1dbf73;
+
+}
+
+.burger-close {
+  font-size: 3em;
+}
+
+.btn-topic {
+  max-width: 20%;
+  height: 5vh;
+  background-color: white;
+  border: solid 0.1rem #1dbf73;
+  border-radius: 10%;
+  font-size: 1em;
+  padding: 1rem;
+}
+
+.btn-topic:hover{
+  background-color: #003912;
+  color: white;
+  border: solid 0.1rem #003912;
+
+}
+
+.nav-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 2rem;
 }

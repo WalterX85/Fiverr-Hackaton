@@ -9,18 +9,20 @@ function Forum() {
   const toggleButton = (classname, text) => <button type="button" className={classname} onClick={toggleBurgerOpened}>{text}</button>;
 
   return (
-    <div>
-      {isBurgerOpened ? (
-        <>
-          {toggleButton('burger-close', 'x')}
-          <Navbar />
-        </>
-      ) : (
-        toggleButton('burger-open', '≣')
-      )}
-      <h1>Questions and Answers</h1>
-      <button type="submit">Create topic</button>
-    </div>
+    <>
+      <div className="nav-container">
+        {isBurgerOpened ? (
+          <>
+            {toggleButton('burger-close', 'x')}
+            <Navbar />
+          </>
+        ) : (
+          toggleButton('burger-open', '≣')
+        )}
+        <h1>Questions and Answers</h1>
+        <button className="btn-topic" type="submit">Create topic</button>
+      </div>
+    </>
   );
 }
 
