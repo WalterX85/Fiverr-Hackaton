@@ -1,8 +1,11 @@
 import React from 'react';
+import Forum from './components/Forum';
 
 function App() {
   return (
-    <div className="App" />
+    <div className="App">
+      <Forum />
+    </div>
   );
 }
 
