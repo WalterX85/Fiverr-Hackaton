@@ -14,6 +14,7 @@ CREATE TABLE `question` (
     `id` INT NOT NULL AUTO_INCREMENT,
     `question_text` VARCHAR(1000) NOT NULL,
     `user_id` INT NOT NULL,
+    `upvote`INT NULL
     PRIMARY KEY (`id`),
     CONSTRAINT `fk_question_user` FOREIGN KEY (`user_id`) REFERENCES user(id)
 );
