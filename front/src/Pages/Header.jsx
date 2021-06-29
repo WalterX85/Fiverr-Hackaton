@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/Header.scss';
+import '../CSS/Header.scss';
 import logoFiverr from '../Assets/logoFiverr.jpg';
 
 function Header() {
