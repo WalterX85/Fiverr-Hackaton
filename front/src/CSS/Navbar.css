@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'Macan';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Macan/TTF/Macan-Light.ttf'); /* IE9 Compat Modes */
+    src: local('Macan'), local('Macan'),
+  }
+  
+  body {
+    font-family: 'Macan';
+  }
+
 nav{
     margin: 0 auto;
     background-color: white;
