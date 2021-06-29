@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/Header.scss';
+import '../CSS/Header.scss';
 import logoFiverr from '../Assets/logoFiverr.jpg';
 
 function Header() {
@@ -13,7 +13,7 @@ function Header() {
           <input type="search" autoComplete="off" placeholder="Find Services" value="" />
           <button type="button" className="searchButton">Search</button>
         </div>
-        <div className="fiverr-business">
+        {/* <div className="fiverr-business">
           <a href="Fiverr-Business">Fiverr Business</a>
         </div>
         <div className="explore">
@@ -27,7 +27,7 @@ function Header() {
         </div>
         <div className="become-a-seller">
           <a href="Become-a-seller">Become a seller</a>
-        </div>
+        </div> */}
         <div className="sign-in">
           <a href="Sign-Up">Sign Up</a>
         </div>
