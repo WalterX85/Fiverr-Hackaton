@@ -1,0 +1,165 @@
+/* green */
+$lightgreen: #d0f7e6;
+$mediumgreen: #00732e;
+$darkgreen: #003912;
+
+/* yellow */
+$lightyellow: #f1f4cb;
+$mediumyellow: #687200;
+$darkyellow: #254200;
+
+/* pink */
+$lightpink: #ffd3e2;
+$mediumpink: #be5272;
+$darkpink: #4d1727;
+
+/* orange */
+$lightorange: #ffe0d4;
+$mediumorange: #8f2900;
+$darkorange: #421300;
+
+  .logo { grid-area: logo;
+    height: 65px;
+}
+  
+  .searchbar { 
+    grid-area: searchbar;
+    display: flex;
+    height: 4vh;
+    justify-self: center;
+}
+  .searchbar input {
+    width: 15vw;
+  }
+  .searchButton {
+    background-color: $mediumgreen;
+    width: 5vw;
+    border-radius: 3px;
+  }
+  .container {
+    display: grid;
+    align-items: center;
+    border: 1px solid lightgray;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: 
+    "logo searchbar searchbar searchbar fiverr-business explore language type-of-monney become-a-seller sign-in join"; 
+}
+  
+  .fiverr-business { 
+    grid-area: fiverr-business; 
+    justify-self: center;
+  }
+  
+  .try-fiver-business { 
+    grid-area: try-fiver-business; 
+    justify-self: center;
+  }
+  
+  .explore { 
+    grid-area: explore; 
+    justify-self: center;
+  }
+  
+  .language { 
+    grid-area: language; 
+    justify-self: center;
+  }
+  
+  .type-of-monney { 
+    grid-area: type-of-monney; 
+    justify-self: center;
+  }
+  
+  .become-a-seller { 
+    grid-area: become-a-seller; 
+    justify-self: center;
+  }
+  
+  .sign-in { 
+    grid-area: sign-in; 
+    justify-self: center;
+  }
+  
+  .join { 
+    grid-area: join; 
+    justify-self: center;
+  }
+  .joinButton {
+    background-color: $lightgreen;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 0.25rem 1rem;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .container2 {
+    display: grid;
+    height: 5vh;
+    border-bottom: 1px solid lightgray;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr 0.7fr 0.7fr 0.7fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "graphics-design digital-marketing writing-translation video-animation music-audio programming-tech data business lifestyle question-answer";
+  }
+  
+  .graphics-design { 
+    grid-area: graphics-design;
+    justify-self: center;
+  }
+  
+  .digital-marketing { 
+    grid-area: digital-marketing;
+    justify-self: center;
+  }
+  
+  .writing-translation { 
+    grid-area: writing-translation;
+    justify-self: center;
+  }
+  
+  .video-animation { 
+    grid-area: video-animation;
+    justify-self: center;
+  }
+  
+  .music-audio { 
+    grid-area: music-audio;
+    justify-self: center;
+  }
+  
+  .programming-tech { 
+    grid-area: programming-tech;
+    justify-self: center;
+  }
+  
+  .data { 
+    grid-area: data;
+    justify-self: center;
+  }
+  
+  .business { 
+    grid-area: business;
+    justify-self: center;
+  }
+  
+  .lifestyle { 
+    grid-area: lifestyle;
+    justify-self: center;
+  }
+  
+  .question-answer { 
+    grid-area: question-answer;
+    justify-self: center;
+  }
+  
