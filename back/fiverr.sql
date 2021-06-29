@@ -6,7 +6,8 @@ CREATE TABLE `user` (
     `id` INT NOT NULL AUTO_INCREMENT,
     `email` VARCHAR(100) NOT NULL,
     `password` VARCHAR(256) NOT NULL,
-    PRIMARY KEY (`id`)
+    PRIMARY KEY (`id`),
+    CONSTRAINT `uc_email` UNIQUE (`email`)
 );
 
 CREATE TABLE `question` (

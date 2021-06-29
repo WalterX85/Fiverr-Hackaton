@@ -20,8 +20,20 @@ PUT http://localhost:9000/questions/5
 Content-Type: application/json
 
 {
+
     "user_id" : 2,
     "question_text" : "Attention au transit avec la pizza méxicaine"
+}
+
+###
+
+POST http://localhost:9000/users
+Content-type: application/json
+
+{
+    "email": "jme@mail.com",
+    "password": "123456"
+
 }
 
 ###
