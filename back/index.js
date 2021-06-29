@@ -1,6 +1,7 @@
 const express = require('express');
 
 const app = express();
+app.use(express.json());
 
 const questionsRoutes = require('./routes/questions');
 const userRoutes = require('./routes/users');
