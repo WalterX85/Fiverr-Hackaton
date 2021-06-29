@@ -1,0 +1,42 @@
+.box {
+    display: flex;
+    justify-content: center;
+}
+.box h2 {
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 1rem;
+}
+.box1 {
+    display: flex;
+    justify-content: center;
+}
+.box1 ul {
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+h4 {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+li {
+    padding: 0.5rem;
+}
+.answer {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+.answer input {
+    padding: 0.5rem;
+}

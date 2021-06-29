@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import '../CSS/Navbar.css';
 
 function ForumMenu() {
@@ -6,7 +7,7 @@ function ForumMenu() {
     <nav className="navMenu">
       <ul>
         <li className="displayMenu">
-          <a href="category">Graphic & Design</a>
+          <NavLink to="/graphicsdesign"> Graphic & Design</NavLink>
           <ul className="sub">
             <li><a href="sub-category">Logo Design</a></li>
             <li><a href="sub-category">Game Art</a></li>
@@ -14,7 +15,7 @@ function ForumMenu() {
           </ul>
         </li>
         <li className="displayMenu">
-          <a href="category">Digital Marketing</a>
+          <NavLink to="/digitalmarketing">Digital Marketing</NavLink>
           <ul className="sub">
             <li><a href="sub-category">Social Media Marketing</a></li>
             <li><a href="sub-category">Public Relations</a></li>
@@ -22,7 +23,7 @@ function ForumMenu() {
           </ul>
         </li>
         <li className="displayMenu">
-          <a href="category">Writting & Translation</a>
+          <NavLink to="/writtingtranslation">Writting & Translation</NavLink>
           <ul className="sub">
             <li><a href="sub-category">Translation</a></li>
             <li><a href="sub-category">Script Writting</a></li>
@@ -30,7 +31,7 @@ function ForumMenu() {
           </ul>
         </li>
         <li className="displayMenu">
-          <a href="category">Programming & tech</a>
+          <NavLink to="/programmingtech">Programming & tech</NavLink>
           <ul className="sub">
             <li><a href="sub-category">WordPress</a></li>
             <li><a href="sub-category">Game Development</a></li>
