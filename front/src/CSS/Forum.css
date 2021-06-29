@@ -14,7 +14,7 @@ h1 {
   text-align: center;
 }
 
-.burger-open {
+.burger-open, .burger-close {
   background-color: rgba(0, 0, 0, 0);
   border-style: none;
   font-size: 2em;
