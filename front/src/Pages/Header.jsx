@@ -14,28 +14,59 @@ function Header() {
           <button type="button" className="searchButton">Search</button>
         </div>
         <div className="fiverr-business">
-          <a href="test">Fiverr Business</a>
+          <a href="Fiverr-Business">Fiverr Business</a>
         </div>
         <div className="explore">
-          <a href="test">Explore</a>
+          <a href="Explore">Explore</a>
         </div>
         <div className="language">
-          <a href="test">🌐 English</a>
+          <a href="🌐 English">🌐 English</a>
         </div>
         <div className="type-of-monney">
-          <a href="test">€EUR</a>
+          <a href="€EUR">€EUR</a>
         </div>
         <div className="become-a-seller">
-          <a href="test">Become a seller</a>
+          <a href="Become-a-seller">Become a seller</a>
         </div>
         <div className="sign-in">
-          <a href="test">Sign Up</a>
+          <a href="Sign-Up">Sign Up</a>
         </div>
         <div className="join">
-          <a href="test">Sign In</a>
+          <a href="Sign-In<">Sign In</a>
         </div>
       </div>
-
+      <div className="container2">
+        <div className="graphics-design">
+          <a href="Graphics-Design">Graphics & Design</a>
+        </div>
+        <div className="digital-marketing">
+          <a href="Digital Marketing">Digital Marketing</a>
+        </div>
+        <div className="writing-translation">
+          <a href="Writing-Translation">Writing & Translation</a>
+        </div>
+        <div className="video-animation">
+          <a href="Video-Animation">Video & Animation</a>
+        </div>
+        <div className="music-audio">
+          <a href="Music-Audio">Music & Audio</a>
+        </div>
+        <div className="programming-tech">
+          <a href="Programming-Tech">Programming & Tech</a>
+        </div>
+        <div className="data">
+          <a href="Data">Data</a>
+        </div>
+        <div className="business">
+          <a href="Business">Business</a>
+        </div>
+        <div className="lifestyle">
+          <a href="Lifestyle">Lifestyle</a>
+        </div>
+        <div className="question-answer">
+          <a href="Forum">Forum</a>
+        </div>
+      </div>
     </>
   );
 }
