@@ -1,7 +1,7 @@
 import React from 'react';
 import '../CSS/Navbar.css';
 
-function Navbar() {
+function ForumMenu() {
   return (
     <nav className="navMenu">
       <ul>
@@ -42,4 +42,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default ForumMenu;

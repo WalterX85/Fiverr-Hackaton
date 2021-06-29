@@ -14,8 +14,13 @@ POST http://localhost:9000/questions
 Content-Type: application/json
 
 {
-    "question_text" : "Pourquoi les bleus ont perdu ?",
-    "user_id" : 2
+
+POST http://localhost:9000/users
+Content-type: application/json
+
+{
+    "email": "jme@mail.com",
+    "password": "123456"
 }
 
 ###
@@ -26,5 +31,4 @@ Content-Type: application/json
 {
     "user_id" : 2,
     "answer_text" : "Parce que Mbappe a raté"
-
 }
