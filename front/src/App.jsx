@@ -1,10 +1,8 @@
 import React from 'react';
-import './CSS/App.scss';
 import { LoginRequestProvider } from './context/loginRequest';
 import Header from './Pages/Header';
-import './css/App.scss';
+import './CSS/App.scss';
 import Routes from './Pages/Routes';
-
 
 function App() {
   return (
