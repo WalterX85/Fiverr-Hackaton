@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'Macan';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Macan/TTF/Macan-Light.ttf'); /* IE9 Compat Modes */
+    src: local('Macan'), local('Macan'),
+  }
+  
+  body {
+    font-family: 'Macan';
+  }
+
+.profile-container {
+   display: flex;
+ justify-content: center;
+ flex-direction: column;
+}
+
+.intro-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: url('../Assets/bg1.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.title {
+    height: 25vh;
+    color: white;
+    padding: 3rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.status-container{
+    min-width: 50%;
+    margin-right: 3rem;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.profile-text{
+color: white;
+font-size: 0.8rem;
+}
+
+select {
+    background-color: white;
+    border-radius: 10%;
+    font-family: "Macan";
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: solid 2px #4d1727;
+    margin: 2rem;
+}
+
+select:hover{
+    background-color: #4d1727;
+    color: white;
+}
+
+option {
+    font-family: "Macan";
+    background-color: white;
+    color: #4d1727;
+}
+
+.btn-collab{
+    font-family: "Macan";
+    font-size: 1rem;
+    margin: 2rem;
+    color: #ffd3e2;
+    background-color: #4d1727;
+    border-radius: 10%;
+    padding: 0.5rem;
+    border: solid 1px #be5272;;
+    margin: 2rem;
+}
+
+.btn-collab:hover{
+    background-color: #ffd3e2;
+    color: #4d1727;
+}
