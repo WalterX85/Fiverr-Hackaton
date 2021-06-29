@@ -1,7 +1,7 @@
 import React from 'react';
 import { LoginRequestProvider } from './context/loginRequest';
 import Header from './Pages/Header';
-import './CSS/App.scss';
+import './css/App.scss';
 // import Forum from './components/Forum';
 // import SignIn from './Pages/SignIn';
 import Routes from './Pages/Routes';
