@@ -9,6 +9,8 @@ import WrittingTranlation from './WrittingTranlation';
 import ProgrammingTech from './ProgrammingTech';
 
 import Home from './Home';
+import Question from '../components/Question';
+import QuestionList from '../components/QuestionList';
 
 const route = (path, Component) => <Route exact path={path} component={Component} />;
 
@@ -24,6 +26,8 @@ function Routes() {
         {route('/digitalmarketing', DigitalMarketing)}
         {route('/writtingtranslation', WrittingTranlation)}
         {route('/programmingtech', ProgrammingTech)}
+        {route('/questions', QuestionList)}
+        {route('/questions/:id', Question)}
       </Switch>
     </Router>
   );

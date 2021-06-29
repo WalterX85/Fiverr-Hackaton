@@ -6,6 +6,10 @@ GET http://localhost:9000/questions
 
 ###
 
+GET http://localhost:9000/questions/1
+
+###
+
 POST http://localhost:9000/questions/1
 Content-Type: application/json
 
@@ -16,11 +20,12 @@ Content-Type: application/json
 
 ###
 
+###
+
 PUT http://localhost:9000/questions/5
 Content-Type: application/json
 
 {
-
     "user_id" : 2,
     "question_text" : "Attention au transit avec la pizza méxicaine"
 }
