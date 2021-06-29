@@ -11,6 +11,7 @@ CREATE TABLE `user` (
 
 CREATE TABLE `question` (
     `id` INT NOT NULL AUTO_INCREMENT,
+    `question_text` VARCHAR(1000) NOT NULL,
     `user_id` INT NOT NULL,
     PRIMARY KEY (`id`),
     CONSTRAINT `fk_question_user` FOREIGN KEY (`user_id`) REFERENCES user(id)
@@ -20,6 +21,7 @@ CREATE TABLE `answer` (
     `id` INT NOT NULL AUTO_INCREMENT,
     `user_id` INT NOT NULL,
     `question_id` INT NOT NULL,
+    `answer_text` VARCHAR(1000) NOT NULL,
     PRIMARY KEY (`id`),
     CONSTRAINT `fk_answer_user` FOREIGN KEY (`user_id`) REFERENCES user(id),
     CONSTRAINT `fk_answer_question` FOREIGN KEY (`question_id`) REFERENCES question(id)
@@ -30,8 +32,8 @@ insert into user(id, email, password) values
   (1, 'a@mail.com', 'secret'),
   (2, 'b@mail.com', 'secret');
 
-insert into question(id, user_id) values
-  (1, 1);
+insert into question(id,question_text, user_id) values
+  (1,'Salut les bros, pourquoi une pizza pour 2?', 1);
 
-insert into answer(id, user_id, question_id) values
-  (1, 2, 1);
+insert into answer(id, user_id, question_id, answer_text) values
+  (1, 2, 1,'Parce que tu es grosse Mélisandre');
