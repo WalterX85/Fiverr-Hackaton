@@ -1,12 +1,34 @@
 GET http://localhost:9000/users
 
-###
+### QUESTIONS ROUTE
 
 GET http://localhost:9000/questions
 
 ###
 
-GET http://localhost:9000/questions/1/answers
+GET http://localhost:9000/questions/1
+
+###
+
+POST http://localhost:9000/questions/1
+Content-Type: application/json
+
+{
+    "user_id" : 2,
+    "question_text" : "Pourquoi les bleus ont perdu ?"
+}
+
+###
+
+###
+
+PUT http://localhost:9000/questions/5
+Content-Type: application/json
+
+{
+    "user_id" : 2,
+    "question_text" : "Attention au transit avec la pizza méxicaine"
+}
 
 ###
 
@@ -14,6 +36,39 @@ POST http://localhost:9000/users
 Content-type: application/json
 
 {
-    "email": "jm@mail.com",
+    "email": "jme@mail.com",
     "password": "123456"
+
 }
+
+###
+
+DELETE http://localhost:9000/questions/1
+
+### ANSWERS ROUTE
+
+GET http://localhost:9000/questions/1/answers
+
+###
+
+POST http://localhost:9000/questions/1/answers
+Content-Type: application/json
+
+{
+    "user_id" : 2,
+    "answer_text" : "Parce que Mbappe a raté"
+}
+
+###
+
+PUT http://localhost:9000/questions/5/answers
+Content-Type: application/json
+
+{
+    "user_id" : 2,
+    "answer_text" : "Marjorie"
+}
+
+###
+
+DELETE http://localhost:9000/questions/16/answers

@@ -1,6 +1,6 @@
 const users = require('express').Router();
 const db = require('../db-config');
-const { hashPassword } = require('../middlewares/auth');
+const { hashPassword, verifyPassword } = require('../middlewares/auth');
 
 users.get('/', (req, res) => {
   db.query('SELECT * from user', (err, results) => {
@@ -19,15 +19,19 @@ users.post('/', hashPassword, (req, res) => {
     password: req.body.password,
   };
 
-  db.query('INSERT INTO user (email, password) VALUES (?, ?)', [user.email, user.password], (err, results) => {
-    if (err) {
-      console.log(err);
-      res.status(500);
-    } else {
-      delete user.password;
-      res.status(201).json({ ...user, id: results.insertId });
-    }
-  });
+  db.query(
+    'INSERT INTO user (email, password) VALUES (?, ?)',
+    [user.email, user.password],
+    (err, results) => {
+      if (err) {
+        console.log(err);
+        res.sendStatus(500);
+      } else {
+        delete user.password;
+        res.status(201).json({ ...user, id: results.insertId });
+      }
+    },
+  );
 });
 
 module.exports = users;

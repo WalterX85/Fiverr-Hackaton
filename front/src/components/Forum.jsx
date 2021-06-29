@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../CSS/Forum.css';
-import Navbar from './Navbar';
+import Navbar from './ForumMenu';
 
 function Forum() {
   const [isBurgerOpened, setIsBurgerOpened] = useState(false);
