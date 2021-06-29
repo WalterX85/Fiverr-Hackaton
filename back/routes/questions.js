@@ -12,6 +12,23 @@ questions.get('/', (req, res) => {
   });
 });
 
+questions.get('/:id', (req, res) => {
+  db.query('SELECT * from question WHERE id = ?', [req.params.id], (err, results) => {
+    if (err) {
+      console.log(err);
+      return res.status(500);
+    }
+
+    const [question] = results;
+
+    if (question == null) {
+      res.status(404);
+    } else {
+      res.status(200).json(question);
+    }
+  });
+});
+
 questions.post('/:id', (req, res) => {
   const question = {
     question_text: req.body.question_text,

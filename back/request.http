@@ -6,6 +6,10 @@ GET http://localhost:9000/questions
 
 ###
 
+GET http://localhost:9000/questions/1
+
+###
+
 POST http://localhost:9000/questions/1
 Content-Type: application/json
 
