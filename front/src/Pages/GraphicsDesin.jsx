@@ -1,9 +1,19 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../CSS/Home.scss';
+import logoWhite from '../Assets/logoWhite.png';
 
-function GraphicsDesin() {
+function GraphicsDesign() {
   return (
     <>
+      <div className="headerContainer">
+        <div className="navContainer">
+          <img className="logo" src={logoWhite} alt="logo" />
+          <Link className="forumNav" to="/forum">Forum</Link>
+          <Link className="forumNav" to="/">Profile</Link>
+        </div>
+        <h1 className="mainTitle">Graphic and Design</h1>
+      </div>
       <h3 className="question">
         Question :
       </h3>
@@ -27,4 +37,4 @@ function GraphicsDesin() {
   );
 }
 
-export default GraphicsDesin;
+export default GraphicsDesign;

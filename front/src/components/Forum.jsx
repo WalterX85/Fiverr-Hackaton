@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../CSS/Forum.css';
 import Navbar from './ForumMenu';
 import Question from './Question';
+import Header from '../Pages/Header';
 
 function Forum() {
   const [isBurgerOpened, setIsBurgerOpened] = useState(false);
@@ -11,6 +12,7 @@ function Forum() {
 
   return (
     <>
+      <Header />
       <div className="nav-container">
         {isBurgerOpened ? (
           <>
