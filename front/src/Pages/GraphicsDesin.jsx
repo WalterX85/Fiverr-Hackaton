@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../CSS/Home.scss';
+import '../css/Home.scss';
 import logoWhite from '../Assets/logoWhite.png';
 
 function GraphicsDesign() {
