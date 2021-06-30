@@ -1,7 +1,7 @@
 import React from 'react';
 import { LoginRequestProvider } from './context/loginRequest';
 import Routes from './Pages/Routes';
-import './css/App.scss';
+import './CSS/App.scss';
 
 function App() {
   return (
