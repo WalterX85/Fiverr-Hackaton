@@ -12,7 +12,7 @@ function QuestionList() {
   }, []);
   return (
     <ul>
-      {questions.map((question) => (<li key={question.id}><Link to={`/questions/${question.id}`}>{question.question_text}</Link></li>))}
+      {questions.map((question) => (<li key={question.id} className="liQuestion"><Link to={`/questions/${question.id}`}>{question.question_text}</Link></li>))}
     </ul>
   );
 }

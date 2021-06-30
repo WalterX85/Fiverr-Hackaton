@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useHistory, Link } from 'react-router-dom';
+import Header from './Header';
+import '../CSS/Forum.css';
 
 function QuestionForm() {
   const history = useHistory();
@@ -28,17 +30,19 @@ function QuestionForm() {
   };
 
   return (
-    <form onSubmit={submitQuestion}>
-      <div>
-        <label htmlFor="question-text">
-          Votre question :
-          <input id="question-text" name="question_text" type="text" value={questionData.question_text} onChange={handleChange} />
-        </label>
-      </div>
-      <div>
-        <button type="submit">Demander</button>
-      </div>
-    </form>
+    <>
+      <Header />
+      <Link to="/forum" className="backForum">Back to forum</Link>
+      <form className="formForm" onSubmit={submitQuestion}>
+        <div className="formQuestion">
+          <label className="labelForm" htmlFor="question-text">
+            Your question :
+            <textarea id="question-text" name="question_text" type="text" value={questionData.question_text} onChange={handleChange} />
+            <button type="submit">Ask</button>
+          </label>
+        </div>
+      </form>
+    </>
   );
 }
 

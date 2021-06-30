@@ -56,3 +56,83 @@ h1 {
   justify-content: space-between;
   margin: 2rem;
 }
+
+.questionlist {
+  display: flex;
+  justify-content: center;
+}
+.liQuestion {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+.createTopic {
+  border: 2px solid grey;
+  background-color: #00732e;
+  border-radius: 5px ;
+  padding: .5rem;
+  font-weight: bold;
+}
+.questionTitle {
+  text-decoration: underline;
+  font-size: 2.5rem;
+}
+.h1Title {
+  margin-top: 1rem;
+  font-size: 2rem;
+  
+}
+.answerClass {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.answerForm {
+  margin: 3rem 0rem;
+}
+
+.envoyer {
+  padding: .25rem;
+  text-align: center;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+#answer-text {
+  height: 15vh;
+  width: 35vw;
+  font-size: 1rem;
+}
+.answerArea {
+  text-align: center;
+}
+.answerArea label{
+  display: flex;
+  flex-direction: column;
+}
+.formQuestion {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.backForum {
+  border: 2px solid grey;
+  background-color: #00732e;
+  border-radius: 5px ;
+  padding: .25rem;
+  font-weight: bold;
+}
+#question-text {
+  height: 15vh;
+  width: 35vw;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+.questionArea {
+  text-align: center;
+}
+.formQuestion label{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
+}
+

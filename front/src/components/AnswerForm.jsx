@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import '../CSS/Forum.css';
 
 const initialState = { answer_text: '', user_id: 1 };
 
@@ -17,17 +18,19 @@ function AnswerForm({ addAnswer }) {
   };
 
   return (
-    <form onSubmit={submitAnswer}>
-      <div>
-        <label htmlFor="Answer-text">
-          Votre réponse :
-          <input id="answer-text" name="answer_text" type="text" value={answerData.answer_text} onChange={handleChange} />
-        </label>
+    <>
+      <div className="answerForm">
+        <form onSubmit={submitAnswer}>
+          <div className="answerArea">
+            <label htmlFor="Answer-text">
+              Your answer :
+              <textarea id="answer-text" name="answer_text" value={answerData.answer_text} onChange={handleChange} />
+              <button type="submit" className="envoyer">Send</button>
+            </label>
+          </div>
+        </form>
       </div>
-      <div>
-        <button type="submit">Envoyer</button>
-      </div>
-    </form>
+    </>
   );
 }
 

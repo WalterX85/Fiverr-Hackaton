@@ -22,8 +22,10 @@ function Forum() {
         ) : (
           toggleButton('burger-open', '≣')
         )}
-        <h1>Questions and Answers</h1>
-        <Link to="/questions/create">Create topic</Link>
+        <h1 className="questionTitle">Questions :</h1>
+        <Link to="/questions/create" className="createTopic">Create topic</Link>
+      </div>
+      <div className="questionlist">
         <QuestionList />
       </div>
     </>
