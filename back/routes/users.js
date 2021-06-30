@@ -1,6 +1,6 @@
 const users = require('express').Router();
 const db = require('../db-config');
-const { hashPassword, verifyPassword } = require('../middlewares/auth');
+const { hashPassword } = require('../middlewares/auth');
 
 users.get('/', (req, res) => {
   db.query('SELECT * from user', (err, results) => {

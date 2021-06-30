@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Redirect } from 'react-router-dom';
 import '../CSS/Profile.css';
 import imgProfile from '../Assets/imgprofile.jpg';
 
 function Profile() {
+  const [isClicked, setIsClicked] = useState(false);
+
   return (
     <div className="profile-container">
       <div className="intro-container">
@@ -46,7 +49,10 @@ function Profile() {
             !
           </h4>
           <p className="forum-text">Join community of freelancers from around the world and from any domains</p>
-          <button className="btn-forum" type="button">Forum</button>
+          <button className="btn-forum" type="button" onClick={() => setIsClicked(true)}>Forum</button>
+          {isClicked && (
+            <Redirect to="/forum" />
+          )}
         </div>
       </div>
     </div>

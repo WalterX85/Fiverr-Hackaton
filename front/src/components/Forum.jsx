@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../CSS/Forum.css';
 import Navbar from './ForumMenu';
+import Question from './Question';
 
 function Forum() {
   const [isBurgerOpened, setIsBurgerOpened] = useState(false);
@@ -21,6 +22,7 @@ function Forum() {
         )}
         <h1>Questions and Answers</h1>
         <button className="btn-topic" type="submit">Create topic</button>
+        <Question />
       </div>
     </>
   );
