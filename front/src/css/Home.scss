@@ -40,3 +40,23 @@ li {
 .answer input {
     padding: 0.5rem;
 }
+
+.headerContainer {
+    background-image: url('../Assets/faceover.jpg');
+    font-size: 2rem;
+    padding:4rem;
+}
+
+.mainTitle {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px black;
+}
+
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.forumNav:hover {
+color: blue;
+}
