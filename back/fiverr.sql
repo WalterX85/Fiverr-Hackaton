@@ -14,7 +14,7 @@ CREATE TABLE `question` (
     `id` INT NOT NULL AUTO_INCREMENT,
     `question_text` VARCHAR(1000) NOT NULL,
     `user_id` INT NOT NULL,
-    `upvote`INT NULL
+    `upvote`INT NULL,
     PRIMARY KEY (`id`),
     CONSTRAINT `fk_question_user` FOREIGN KEY (`user_id`) REFERENCES user(id)
 );
@@ -35,7 +35,7 @@ insert into user(id, email, password) values
   (2, 'b@mail.com', 'secret');
 
 insert into question(id,question_text, user_id) values
-  (1,'Salut les bros, pourquoi une pizza pour 2?', 1);
+  (1,'What is the single most influential book every designer programmer should read ?', 2);
 
 insert into answer(id, user_id, question_id, answer_text) values
-  (1, 2, 1,'Parce que tu es grosse Mélisandre');
+  (1, 2, 1,'Code Complete (2nd edition) by Steve McConnell');

@@ -15,7 +15,7 @@ Content-Type: application/json
 
 {
     "user_id" : 2,
-    "question_text" : "Pourquoi les bleus ont perdu ?"
+    "question_text" : "What is the single most influential book every designer programmer should read ?"
 }
 
 ###
