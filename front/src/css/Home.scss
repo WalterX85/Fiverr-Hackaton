@@ -1,21 +1,64 @@
+@font-face {
+    font-family: 'Macan';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Macan/TTF/Macan-Light.ttf'); /* IE9 Compat Modes */
+    src: local('Macan'), local('Macan'),
+  }
+
+  @font-face {
+    font-family: 'MacanRegular';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Macan/TTF/Macan-Regular.ttf'); /* IE9 Compat Modes */
+    src: local('Macan'), local('Macan'),
+  }
+
+  @font-face {
+    font-family: 'Domain';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Domain/DomaineDisplay-Regular.otf'); /* IE9 Compat Modes */
+    src: local('Domain'), local('Domain'),
+  }
+  
+
 .box {
     display: flex;
+    text-align: center;
+    flex-direction: row;
     justify-content: center;
+    background-color:#f8d4e0c4;
+}
+
+.questionUser {
+    background-color:#f8d4e0c4;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    text-align: right;
+    padding-bottom: 1rem;
+}
+
+.box h3 {
+    border-radius: 5px;
+    padding: 3rem;
+    font-size: 1rem;
 }
 .box h2 {
-    border: 1px solid grey;
     border-radius: 5px;
-    padding: 1rem;
+    padding: 3rem;
+    font-size: 1.6rem;
+    font-style: italic;
 }
 .box1 {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    background-color: #ffffff;
 }
 .box1 ul {
-    border: 1px solid grey;
-    border-radius: 5px;
-    padding: 2rem;
-    margin-top: 2rem;
+    padding: 4rem;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    list-style: none;
 }
 h3 {
     text-align: center;
@@ -45,6 +88,7 @@ li {
     background-image: url('../Assets/faceover.jpg');
     font-size: 2rem;
     padding:4rem;
+    margin-bottom: 1rem;
 }
 
 .mainTitle {
@@ -57,6 +101,60 @@ li {
     justify-content: space-between;
 }
 
-.forumNav:hover {
-color: blue;
+.forumNav {
+    font-family: 'Domain';
+    color: #c7c7c7;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+.forumNav:hover{
+    opacity: 0.5;
+}
+
+.likeButtons {
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem;
+    background-color: rgba(77, 23, 39, 0.6);
+    border-bottom: solid 2px #4d1727;
+}
+
+.iconBtn {
+    width: 2%;
+    background-color: rgba(0, 0, 0, 0);
+    border-style: none;
+    font-size: 1rem;
+    color:#fde6eec4;
+    text-shadow: 1px 1px 2px black;
+    
+}
+
+.iconFav {
+    width: 2%;
+    background-color: rgba(0, 0, 0, 0);
+    border-style: none;
+    font-size: 1.5rem;
+    
+}
+
+.answerUser {
+    font-size: 0.7rem;
+    font-style: italic;
+    padding: 0.7rem;
+    font-weight: bold;
+}
+
+.timeDiv {
+    background-color: rgba(77, 23, 39, 0.4);
+    border-bottom: solid 1px #4d1727;
+    border-top: solid 2px #4d1727;
+}
+
+.flowLinks {
+    color: #4d1727;
+    font-weight: bold;
+}
+
+.flowLinks:hover {
+    text-decoration-line:underline;
 }
