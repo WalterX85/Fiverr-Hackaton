@@ -29,7 +29,7 @@ questions.get('/:id', (req, res) => {
   });
 });
 
-questions.post('/:id', (req, res) => {
+questions.post('/', (req, res) => {
   const question = {
     question_text: req.body.question_text,
     user_id: req.body.user_id,
@@ -76,7 +76,7 @@ questions.delete('/:id', (req, res) => {
 });
 
 questions.get('/:id/answers', (req, res) => {
-  db.query('SELECT * from answer WHERE question_id = ?', [req.params.id], (err, results) => {
+  db.query('SELECT * from answer WHERE question_id = ? ORDER BY id DESC', [req.params.id], (err, results) => {
     if (err) {
       console.log(err);
       res.status(500);
